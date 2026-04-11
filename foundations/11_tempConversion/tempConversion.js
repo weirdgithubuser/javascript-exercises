@@ -1,7 +1,12 @@
-const convertToCelsius = function() {
+const convertToCelsius = function(fahr) {
+  if (Number.isNaN) return false;
+  return Math.round((( fahr - 32) + (5/9)) * 10) / 10;
+
 };
 
-const convertToFahrenheit = function() {
+const convertToFahrenheit = function(cels) {
+  if (Number.isNaN) return false;
+  return Math.round((((9/5) * cels) + 32) * 10) / 10;
 };
 
 // Do not edit below this line
